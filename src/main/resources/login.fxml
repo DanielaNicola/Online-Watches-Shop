@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="385.0" prefWidth="589.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login">
+   <children>
+      <GridPane accessibleRole="TEXT" alignment="CENTER" layoutX="200.0" layoutY="155.0" prefHeight="143.0" prefWidth="202.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.33331298828125" minWidth="10.0" prefWidth="59.999979654947914" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.66664632161456" minWidth="10.0" prefWidth="141.3333536783854" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Username:" />
+            <TextField prefHeight="25.0" prefWidth="137.0" GridPane.columnIndex="1" />
+            <Label prefHeight="17.0" prefWidth="61.0" text="Password:" GridPane.rowIndex="1" />
+            <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Text layoutX="200.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Introduce credentials:" wrappingWidth="160.13671875">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <HBox layoutX="365.0" layoutY="243.0" prefHeight="47.0" prefWidth="142.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="77.0" text="LOGIN" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
