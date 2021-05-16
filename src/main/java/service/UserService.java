@@ -2,7 +2,6 @@ package service;
 import exceptions.UsernameAlreadyExists;
 import org.dizitart.no2.Nitrite;
 import org.dizitart.no2.objects.ObjectRepository;
-import exceptions.UsernameDoesNotExists;
 import model.User;
 
 import java.nio.charset.StandardCharsets;
@@ -17,33 +16,10 @@ public class UserService {
 
     public static void initDatabase() {
         Nitrite database = Nitrite.builder()
-                .filePath(getPathToFile("registration-example.db").toFile())
+                .filePath(getPathToFile("OnlineShop.db").toFile())
                 .openOrCreate("test", "test");
 
         userRepository = database.getRepository(User.class);
-    }
-
-
-    public static User login(String username, String password) throws UsernameDoesNotExists {
-        User crt;
-
-        crt = attemptLogin(username, password);
-
-        if (crt == null) {
-            throw new UsernameDoesNotExists(username);
-        }
-
-        return crt;
-    }
-
-    public static User attemptLogin(String username, String password) {
-        for (User user : userRepository.find()) {
-            if (Objects.equals(username, user.getUsername()) && Objects.equals(encodePassword(username, password), user.getPassword())) {
-                return user;
-            }
-        }
-
-        return null;
     }
 
 
