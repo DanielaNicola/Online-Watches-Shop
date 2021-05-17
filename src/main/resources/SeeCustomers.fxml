@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SeeCustomersPage">
+    <children>
+        <TableView fx:id="table" layoutY="115.0" prefHeight="235.0" prefWidth="600.0" style="-fx-background-color: beige;">
+            <columns>
+                <TableColumn fx:id="ID" prefWidth="100.0" style="-fx-background-color: sandybrown;" text="ID" />
+                <TableColumn fx:id="orders1" prefWidth="499.3333435058594" style="-fx-background-color: sandybrown;" text="Customers" />
+            </columns>
+        </TableView>
+        <Button fx:id="inapoi" layoutY="362.0" mnemonicParsing="false" onAction="#handleInapoiAction" prefHeight="38.0" prefWidth="123.0" style="-fx-background-color: beige;" text="Back to Seller Page" />
+      <Text layoutX="27.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of Customers">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="107.0" fitWidth="148.0" layoutX="493.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/logo.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

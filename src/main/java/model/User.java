@@ -26,7 +26,7 @@ public class User {
     }
 
     public boolean isCustomer(){
-        if(this.role.equals("Client")){
+        if(this.role.equals("Customer")){
             return true;
         }else{
             return false;

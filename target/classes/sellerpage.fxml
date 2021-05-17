@@ -22,7 +22,7 @@
       </Text>
       <Button fx:id="butonDisconnect" layoutX="503.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleDisconnect" text="Disconnect" />
       <Button fx:id="buttonCreate" layoutX="23.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleRegisterAction" text="Create new account" />
-      <Button fx:id="butonEditOp" layoutX="131.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleEditOp" prefHeight="44.0" prefWidth="219.0" text="Edit items" />
+      <Button fx:id="butonEditItems" layoutX="131.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleEditItems" prefHeight="44.0" prefWidth="219.0" text="Edit items" />
       <Button fx:id="butonListOrders" layoutX="130.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleListOrders" prefHeight="44.0" prefWidth="219.0" text="See list of orders" />
       <Button fx:id="butonListCustomers" layoutX="131.0" layoutY="252.0" mnemonicParsing="false" onAction="#handleListCustomers" prefHeight="44.0" prefWidth="219.0" text="See list of customers" />
    </children>

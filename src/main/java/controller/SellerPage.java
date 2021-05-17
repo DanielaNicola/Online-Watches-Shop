@@ -1,6 +1,10 @@
 package controller;
 
 
+//package org.BSA.controllers;
+
+
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -12,12 +16,12 @@ import model.User;
 
 import java.io.IOException;
 
-public class SellerPage {
 
+public class SellerPage {
     @FXML
-    private Button butonCreateAcc;
+    private Button butonCreateAccount;
     @FXML
-    private Button butonEditOp;
+    private Button butonEditItems;
     @FXML
     private Button butonListOrders;
     @FXML
@@ -31,56 +35,62 @@ public class SellerPage {
     @FXML
     private Text registrationMessage;
 
+
+
     private  String userName;
     public  void setUser(User user){
         this.user=user;
     }
 
-    public void handleCreateAcc() throws IOException {
+    public void handleCreateAccount() throws IOException {
         try {
-            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("register.fxml"));
-            Stage stage = (Stage) (butonCreateAcc.getScene().getWindow());
+            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("login.fxml"));
+            Stage stage = (Stage) (butonCreateAccount.getScene().getWindow());
             stage.setScene(new Scene(root));
             stage.show();
         }
         catch (IOException e)
         {
-            System.out.println("Error!");
+            System.out.println("error");
         }
     }
 
-    public void handleEditOp() throws IOException {
+    public void handleEditItems() throws IOException {
         try {
-            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("editopseller.fxml"));
-            Stage stage = (Stage) (butonEditOp.getScene().getWindow());
+            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("EditItems.fxml"));
+            Stage stage = (Stage) (butonEditItems.getScene().getWindow());
             stage.setScene(new Scene(root));
             stage.show();
         }
         catch (IOException e)
         {
-            System.out.println("Error!");
+            System.out.println("error");
         }
     }
     public void handleListOrders() throws IOException {
         try {
-            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("listorderseller.fxml"));
+            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("SeeOrders.fxml"));
             Stage stage = (Stage) (butonListOrders.getScene().getWindow());
             stage.setScene(new Scene(root));
             stage.show();
         }
         catch (IOException e)
         {
-            System.out.println("eroare");
+            System.out.println("error");
         }
     }
     public void handleListCustomers() throws IOException {
+        //try
         {
-            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("listcustomer.fxml"));
+            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("SeeCustomers.fxml"));
             Stage stage = (Stage) (butonListCustomers.getScene().getWindow());
             stage.setScene(new Scene(root));
             stage.show();
         }
-
+       /* catch (IOException e)
+        {
+            System.out.println("eroare");
+        }*/
     }
     public void handleDisconnect() throws IOException {
         try {
@@ -91,7 +101,7 @@ public class SellerPage {
         }
         catch (IOException e)
         {
-            System.out.println("Error!");
+            System.out.println("error");
         }
     }
     @FXML
@@ -103,7 +113,7 @@ public class SellerPage {
             stage.show();
 
         } catch(IOException e){
-            registrationMessage.setText("Error!");
+            registrationMessage.setText("error!");
         }
     }
 }
