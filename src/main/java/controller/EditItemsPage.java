@@ -29,7 +29,7 @@ public class EditItemsPage implements Initializable{
         this.user = user;
     }
     @FXML
-    private Button inapoi;
+    private Button butonBack;
     @FXML
     public static  TableView<EditItems> table_2;
 
@@ -116,11 +116,11 @@ public class EditItemsPage implements Initializable{
 
 
     @FXML
-    public void handleInapoiAction() throws Exception {
+    public void handleBackA() throws Exception {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("sellerpage.fxml"));
             Parent root = loader.load();
-            Stage stage = (Stage) (inapoi.getScene().getWindow());
+            Stage stage = (Stage) (butonBack.getScene().getWindow());
             stage.setScene(new Scene(root));
             stage.show();
         } catch (Exception e) {

@@ -1,5 +1,8 @@
 package controller;
 
+
+
+//import com.sun.javafx.tk.quantum.PaintRenderJob;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -13,15 +16,15 @@ import java.io.IOException;
 
 public class CustomerPage {
     @FXML
-    private Button butonCreareCont;
+    private Button butonCreateAcc;
     @FXML
-    private Button butonAlegereAngajat;
+    private Button butonChooseWatch;
     @FXML
-    private Button butonDeconectare;
+    private Button butonDisconnect;
     @FXML
-    private Button butonVizualizareListaServiciiSiPreturi;
+    private Button butonSeeWatches;
     @FXML
-    private Button AlegereOptiuneDorita;
+    private Button butonFinalize;
     @FXML
     private Button buttonCreate;
     @FXML
@@ -36,10 +39,10 @@ public class CustomerPage {
     }
 
 
-    public void handleCreareCont() throws IOException {
+    public void handleCreateAcc() throws IOException {
         try {
-            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("crearecont.fxml"));
-            Stage stage = (Stage) (butonCreareCont.getScene().getWindow());
+            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("register.fxml"));
+            Stage stage = (Stage) (butonCreateAcc.getScene().getWindow());
             stage.setScene(new Scene(root));
             stage.show();
         }
@@ -48,23 +51,10 @@ public class CustomerPage {
             System.out.println("eroare");
         }
     }
-    public void handleAlegereAngajat() throws IOException {
+    public void handleChooseWatch() throws IOException {
         try {
-            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("clientAlegereAngajat.fxml"));
-            Stage stage = (Stage) (butonAlegereAngajat.getScene().getWindow());
-            stage.setScene(new Scene(root));
-            stage.show();
-        }
-        catch (IOException e)
-        {
-            System.out.println("eroare");
-        }
-    }
-
-    public void handleVizualizareListaServiciiSiPreturi() throws IOException {
-        try {
-            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("clientServiciiPreturi.fxml"));
-            Stage stage = (Stage) (butonAlegereAngajat.getScene().getWindow());
+            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("ChooseWatch.fxml"));
+            Stage stage = (Stage) (butonChooseWatch.getScene().getWindow());
             stage.setScene(new Scene(root));
             stage.show();
         }
@@ -74,10 +64,10 @@ public class CustomerPage {
         }
     }
 
-    public void handleAlegereOptiuneDorita() throws IOException {
+    public void handleSeeWatches() throws IOException {
         try {
-            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("clientAlegereOptiune.fxml"));
-            Stage stage = (Stage) (butonAlegereAngajat.getScene().getWindow());
+            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("SeeWatches.fxml"));
+            Stage stage = (Stage) (butonSeeWatches.getScene().getWindow());
             stage.setScene(new Scene(root));
             stage.show();
         }
@@ -87,16 +77,29 @@ public class CustomerPage {
         }
     }
 
-    public void handleDeconectare() throws IOException {
+    public void handleFinalize() throws IOException {
+        try {
+            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("Finalize.fxml"));
+            Stage stage = (Stage) (butonFinalize.getScene().getWindow());
+            stage.setScene(new Scene(root));
+            stage.show();
+        }
+        catch (IOException e)
+        {
+            System.out.println("eroare");
+        }
+    }
+
+    public void handleDisconnect() throws IOException {
         try {
             Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("login.fxml"));
-            Stage stage = (Stage) (butonDeconectare.getScene().getWindow());
+            Stage stage = (Stage) (butonDisconnect.getScene().getWindow());
             stage.setScene(new Scene(root));
             stage.show();
         }
         catch (IOException e)
         {
-            System.out.println("eroare");
+            System.out.println("error");
         }
     }
     @FXML
@@ -108,8 +111,8 @@ public class CustomerPage {
             stage.show();
 
         } catch(IOException e){
-            registrationMessage.setText("eroare!");
+            registrationMessage.setText("error!");
         }
     }
-
 }
+

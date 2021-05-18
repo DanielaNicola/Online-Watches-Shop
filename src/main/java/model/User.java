@@ -7,6 +7,8 @@ public class User {
     private String password;
     private String role;
     private String optiune;
+    private String angajat;
+    private String ora;
     private int acceptat;
 
     public User(String username, String password, String role) {
@@ -66,6 +68,21 @@ public class User {
 
     public String getOptiune() {
         return optiune;
+    }
+    public String getAngajat() {
+        return angajat;
+    }
+
+    public void setAngajat(String angajat) {
+        this.angajat = angajat;
+    }
+
+    public String getOra() {
+        return ora;
+    }
+
+    public void setOra(String ora) {
+        this.ora = ora;
     }
 
     @Override

@@ -19,7 +19,7 @@
             <TableColumn fx:id="edit" prefWidth="113.33333333333337" style="-fx-background-color: sandybrown;" text="Edit" />
             </columns>
         </TableView>
-        <Button fx:id="inapoi" layoutY="371.0" mnemonicParsing="false" onAction="#handleInapoiAction" prefHeight="29.0" prefWidth="125.0" style="-fx-background-color: beige;" text="Back to Seller Page" />
+        <Button fx:id="butonBack" layoutY="371.0" mnemonicParsing="false" onAction="#handleBackA" prefHeight="29.0" prefWidth="125.0" style="-fx-background-color: beige;" text="Back to Seller Page" />
       <Text layoutX="32.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Items">
          <font>
             <Font name="System Bold" size="37.0" />

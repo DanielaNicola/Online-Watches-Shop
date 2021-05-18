@@ -122,5 +122,51 @@ public class UserService {
         return null;
     }
 
+    public static String getAngajat(String username){
+        for (User user : userRepository.find()) {
+            if (Objects.equals(username, user.getUsername())) {
+                return user.getAngajat();
+            }
+        }
+        return null;
+
+    }
+
+    public static String setAngajat(String username, String numeAngajat){
+        for (User user : userRepository.find()) {
+            if (Objects.equals(username, user.getUsername())) {
+                user.setAngajat(numeAngajat);
+                userRepository.update(user);
+            }
+        }
+        return null;
+
+    }
+
+
+    public static String getOra(String username){
+        for (User user : userRepository.find()) {
+            if (Objects.equals(username, user.getUsername())) {
+                return user.getOra();
+            }
+        }
+        return null;
+
+    }
+
+    public static String setOra(String username, String ora){
+        for (User user : userRepository.find()) {
+            if (Objects.equals(username, user.getUsername())) {
+                user.setOra(ora);
+                userRepository.update(user);
+            }
+        }
+        return null;
+
+    }
+
+
+
+
 
 }
