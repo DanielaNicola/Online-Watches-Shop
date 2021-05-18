@@ -47,7 +47,7 @@ public class SeeOrdersPage implements Initializable {
                 i++;
                 String info= "Client: " + user.getUsername() + " " + user.getUsername() +  ", Optiune: " + UserService.getOptiune(user.getUsername()) ;
                 list.add(new Orders(info ,i)) ;
-                //System.out.println(info);
+
             }
         }
         ID.setCellValueFactory(new PropertyValueFactory<Orders,Integer>("ID"));
@@ -58,7 +58,7 @@ public class SeeOrdersPage implements Initializable {
     @FXML
     public void handleInapoiAction() throws Exception {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("SellerPage.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("sellerpage.fxml"));
             Parent root = loader.load();
             Stage stage = (Stage) (inapoi.getScene().getWindow());
             stage.setScene(new Scene(root));

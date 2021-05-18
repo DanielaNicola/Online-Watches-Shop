@@ -22,8 +22,7 @@ public class FinalizeOrder {
 
     @FXML
     private Text Mesaj;
-    @FXML
-    private TextField AlegereOptiuneClient;
+
     @FXML
     private User user;
     public void setUser(User user) {
@@ -45,7 +44,7 @@ public class FinalizeOrder {
             stage.setScene(new Scene(root));
             stage.show();
         } catch (Exception e) {
-            System.out.println("Eroare");
+            System.out.println("Error");
         }
     }
 

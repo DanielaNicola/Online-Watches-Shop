@@ -122,20 +122,20 @@ public class UserService {
         return null;
     }
 
-    public static String getAngajat(String username){
+    public static String getWatch(String username){
         for (User user : userRepository.find()) {
             if (Objects.equals(username, user.getUsername())) {
-                return user.getAngajat();
+                return user.getWatch();
             }
         }
         return null;
 
     }
 
-    public static String setAngajat(String username, String numeAngajat){
+    public static String setWatch(String username, String watchName){
         for (User user : userRepository.find()) {
             if (Objects.equals(username, user.getUsername())) {
-                user.setAngajat(numeAngajat);
+                user.setWatch(watchName);
                 userRepository.update(user);
             }
         }
@@ -144,20 +144,20 @@ public class UserService {
     }
 
 
-    public static String getOra(String username){
+    public static String getQuantity(String username){
         for (User user : userRepository.find()) {
             if (Objects.equals(username, user.getUsername())) {
-                return user.getOra();
+                return user.getQuantity();
             }
         }
         return null;
 
     }
 
-    public static String setOra(String username, String ora){
+    public static String setQuantity(String username, String quantity){
         for (User user : userRepository.find()) {
             if (Objects.equals(username, user.getUsername())) {
-                user.setOra(ora);
+                user.setQuantity(quantity);
                 userRepository.update(user);
             }
         }

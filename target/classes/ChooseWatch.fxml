@@ -29,5 +29,8 @@
             <Font size="24.0" />
          </font>
       </Text>
+      <Text fx:id="detalii" layoutX="289.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="mesaj" layoutX="278.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="screen1" layoutX="57.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" />
    </children>
 </AnchorPane>

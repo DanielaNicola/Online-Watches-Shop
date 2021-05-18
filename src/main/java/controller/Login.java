@@ -43,8 +43,8 @@ public class Login {
                 Parent root= loader.load();
                 Stage stage = (Stage) (buttonLogin.getScene().getWindow());
                 stage.setScene(new Scene(root));
-                SellerPage manager = loader.getController();
-                manager.setUser(user);
+                SellerPage seller = loader.getController();
+                seller.setUser(user);
                 stage.show();}
             else
             if(user.getRole().equals("Customer")){
@@ -52,8 +52,8 @@ public class Login {
                 Parent root= loader1.load();
                 Stage stage = (Stage) (buttonLogin.getScene().getWindow());
                 stage.setScene(new Scene(root));
-                CustomerPage client = loader1.getController();
-                client.setUser(user);
+                CustomerPage customer = loader1.getController();
+                customer.setUser(user);
 
                 stage.show();
             }

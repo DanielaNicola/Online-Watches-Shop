@@ -22,9 +22,9 @@ public class EditItems {
             for(EditItems user: users){
                 if(user.getUpdate()==update){
                     System.out.println("id:"+ user.getId());
-                    // users.addAll(new EditareServiciiPreturi(user.getId(), user.getPreturi(), user.getServicii(), new Button("update")));
-                    System.out.println("preturi:"+ user.getPrices());
-                    System.out.println("servicii:"+ user.getItems());
+
+                    System.out.println("prices:"+ user.getPrices());
+                    System.out.println("products:"+ user.getItems());
 
 
                 }

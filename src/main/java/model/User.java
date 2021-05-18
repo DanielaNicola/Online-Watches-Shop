@@ -7,8 +7,8 @@ public class User {
     private String password;
     private String role;
     private String optiune;
-    private String angajat;
-    private String ora;
+    private String watch;
+    private String quantity;
     private int acceptat;
 
     public User(String username, String password, String role) {
@@ -69,20 +69,20 @@ public class User {
     public String getOptiune() {
         return optiune;
     }
-    public String getAngajat() {
-        return angajat;
+    public String getWatch() {
+        return watch;
     }
 
-    public void setAngajat(String angajat) {
-        this.angajat = angajat;
+    public void setWatch(String angajat) {
+        this.watch = watch;
     }
 
-    public String getOra() {
-        return ora;
+    public String getQuantity() {
+        return quantity;
     }
 
-    public void setOra(String ora) {
-        this.ora = ora;
+    public void setQuantity(String ora) {
+        this.quantity = quantity;
     }
 
     @Override

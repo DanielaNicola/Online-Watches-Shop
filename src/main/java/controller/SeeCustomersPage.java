@@ -47,7 +47,7 @@ public class SeeCustomersPage implements Initializable {
                 i++;
                 String info= "Client: " + user.getUsername() + " " + user.getUsername() +  ", Optiune: " + UserService.getOptiune(user.getUsername()) ;
                 list.add(new Orders(info ,i)) ;
-                //System.out.println(info);
+
             }
         }
         ID.setCellValueFactory(new PropertyValueFactory<Orders,Integer>("ID"));
@@ -64,7 +64,7 @@ public class SeeCustomersPage implements Initializable {
             stage.setScene(new Scene(root));
             stage.show();
         } catch (Exception e) {
-            System.out.println("Eroare");
+            System.out.println("Error");
         }
     }
 }

@@ -1,8 +1,6 @@
 package controller;
 
 
-
-//import com.sun.javafx.tk.quantum.PaintRenderJob;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -48,7 +46,7 @@ public class CustomerPage {
         }
         catch (IOException e)
         {
-            System.out.println("eroare");
+            System.out.println("error");
         }
     }
     public void handleChooseWatch() throws IOException {
@@ -60,7 +58,7 @@ public class CustomerPage {
         }
         catch (IOException e)
         {
-            System.out.println("eroare");
+            System.out.println("error");
         }
     }
 
@@ -73,7 +71,7 @@ public class CustomerPage {
         }
         catch (IOException e)
         {
-            System.out.println("eroare");
+            System.out.println("error");
         }
     }
 
@@ -86,7 +84,7 @@ public class CustomerPage {
         }
         catch (IOException e)
         {
-            System.out.println("eroare");
+            System.out.println("error");
         }
     }
 

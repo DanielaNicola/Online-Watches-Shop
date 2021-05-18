@@ -57,7 +57,6 @@ public class ChooseWatchPage implements Initializable {
         stage.setScene(new Scene(root));
         CustomerPage watch = loader.getController();
         watch.setUser(user);
-        //AngajatService.addAngajat((String) user.getNume());
         stage.show();
     }
 
@@ -73,7 +72,7 @@ public class ChooseWatchPage implements Initializable {
             client.setUser(user);
             stage.show();
         } catch (Exception e) {
-            System.out.println("Eroare");
+            System.out.println("Error");
         }
     }
 
@@ -120,18 +119,18 @@ public class ChooseWatchPage implements Initializable {
     @FXML
 
     public void displayValue(javafx.event.ActionEvent actionEvent) {
-        String angajat = Watch.getValue();
+        String watch = Watch.getValue();
         String optiuneUser = UserService.getOptiune(getUserCurrent);
-        String ora = Quantity.getValue();
-        if (angajat == null) {
-            screen.setText("Selectati un angajat!");
-        } else if (angajat.contains(optiuneUser)) {
-            mesaj.setText("Optiunea a fost selectata cu succes!");
-            int index = angajat.indexOf("-");
-            String numeAngajat = angajat.substring(0, index);
-            System.out.println(numeAngajat);
-            UserService.setAngajat(getUserCurrent, numeAngajat);
-            UserService.setOra(getUserCurrent, ora);
+        String quantity = Quantity.getValue();
+        if (watch == null) {
+            screen.setText("Select Watch:");
+        } else if (watch .contains(optiuneUser)) {
+            mesaj.setText("The product was selected!");
+            int index = watch .indexOf("-");
+            String watchName = watch .substring(0, index);
+            System.out.println(watchName);
+            UserService.setWatch(getUserCurrent, watchName);
+            UserService.setQuantity(getUserCurrent, quantity);
 
 
 
