@@ -13,19 +13,19 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        initDirectory();
+      //  initDirectory();
         UserService.initDatabase();
         Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("login.fxml"));
         primaryStage.setTitle("Online Shop");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
     }
 
-    private void initDirectory() {
-        Path applicationHomePath = FileSystemService.APPLICATION_HOME_PATH;
-        if (!Files.exists(applicationHomePath))
-            applicationHomePath.toFile().mkdirs();
-    }
+//    private void initDirectory() {
+//        Path applicationHomePath = FileSystemService.APPLICATION_HOME_PATH;
+//        if (!Files.exists(applicationHomePath))
+//            applicationHomePath.toFile().mkdirs();
+//    }
 
 
     public static void main(String[] args) {
