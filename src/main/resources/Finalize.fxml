@@ -19,7 +19,7 @@
                 <Font size="18.0" />
             </font>
         </Button>
-        <Button fx:id="inapoi" layoutX="14.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleInapoiAction" prefHeight="43.0" prefWidth="130.0" text="Back to Customer Page" />
+        <Button fx:id="inapoi" layoutX="14.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleInapoiAction" prefHeight="43.0" prefWidth="158.0" text="Back to Customer Page" />
         <Text fx:id="Mesaj" layoutX="300.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="252.0">
             <font>
                 <Font size="24.0" />
