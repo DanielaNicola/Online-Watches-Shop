@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: yellowgreen;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerPage">
+   <children>
+      <Text layoutX="23.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Page" wrappingWidth="252.64837646484375">
+         <font>
+            <Font size="37.0" />
+         </font></Text>
+      <Button fx:id="butonDisconnect" layoutX="502.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleDisconnect" prefHeight="31.0" prefWidth="83.0" text="Disconect" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="448.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="butonSeeWatches" layoutX="162.0" layoutY="121.0" mnemonicParsing="false" onAction="#handleSeeWatches" prefHeight="42.0" prefWidth="227.0" text="See list of watches" />
+      <Button fx:id="butonChooseWatch" layoutX="162.0" layoutY="189.0" mnemonicParsing="false" onAction="#handleChooseWatch" prefHeight="42.0" prefWidth="227.0" text="Choose watch" />
+      <Button fx:id="butonFinalize" layoutX="162.0" layoutY="269.0" mnemonicParsing="false" onAction="#handleFinalize" prefHeight="42.0" prefWidth="227.0" text="Finalize order" />
+      <Button fx:id="buttonCreate" layoutX="23.0" layoutY="357.0" mnemonicParsing="false" onAction="#handleRegisterAction" prefHeight="31.0" prefWidth="129.0" text="Create new account" />
+   </children>
+</AnchorPane>

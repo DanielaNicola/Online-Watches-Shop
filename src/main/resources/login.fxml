@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="385.0" prefWidth="589.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Login">
+    <children>
+        <GridPane accessibleRole="TEXT" alignment="CENTER" layoutX="168.0" layoutY="130.0" prefHeight="100.0" prefWidth="237.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.33331298828125" minWidth="10.0" prefWidth="72.66668701171875" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.66664632161456" minWidth="10.0" prefWidth="129.33331298828125" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="60.66666666666667" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="105.33334350585939" minHeight="10.0" prefHeight="82.66666666666667" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label text="Username:" />
+                <TextField fx:id="usernameField" prefHeight="25.0" prefWidth="137.0" GridPane.columnIndex="1" />
+                <Label prefHeight="17.0" prefWidth="61.0" text="Password:" GridPane.rowIndex="1" />
+                <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            </children>
+        </GridPane>
+        <Text layoutX="270.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN" wrappingWidth="160.13671875">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Text>
+        <Button fx:id="buttonCreate" layoutX="228.0" layoutY="323.0" mnemonicParsing="false" onAction="#handleRegisterAction" prefHeight="47.0" prefWidth="133.0" text="Register" />
+        <HBox layoutX="383.0" layoutY="231.0" prefHeight="47.0" prefWidth="142.0" />
+        <Text layoutX="215.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You don't have an account?" wrappingWidth="189.71810913085938" />
+        <Button fx:id="buttonLogin" layoutX="392.0" layoutY="217.0" mnemonicParsing="false" onAction="#handleLoginAction" prefHeight="38.0" prefWidth="78.0" text="LOGIN" />
+        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@image/logo.png" />
+            </image>
+        </ImageView>
+        <Text fx:id="registrationMessage" fill="#d21313" layoutX="199.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="254.66668701171875" />
+    </children>
+</AnchorPane>
